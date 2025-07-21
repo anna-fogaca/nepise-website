@@ -1,0 +1,464 @@
+/* ===== PÁGINA ORIENTANDOS - ESTILOS ESPECÍFICOS ===== */
+
+/* ===== HERO SECTION ORIENTANDOS ===== */
+.orientandos-hero {
+  background: var(--gradient-primary);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.orientandos-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+}
+
+.hero-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+.scroll-indicator {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* ===== SEÇÃO DE LÍDERES ===== */
+.leaders-section {
+  background: linear-gradient(135deg, var(--light-gray) 0%, rgba(102, 204, 255, 0.03) 100%);
+  position: relative;
+}
+
+.leaders-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 123, 255, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(102, 204, 255, 0.02) 0%, transparent 50%);
+}
+
+.leader-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow-light);
+  transition: var(--transition-smooth);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.leader-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-heavy);
+  border-color: var(--primary-blue);
+}
+
+.leader-card .card-header {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.leader-avatar {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 2.5rem;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.leader-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.leader-badge.leader {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+.leader-badge.co-leader {
+  background: rgba(192, 192, 192, 0.2);
+  color: #c0c0c0;
+  border: 1px solid rgba(192, 192, 192, 0.4);
+}
+
+.leader-card .card-body {
+  padding: 1.5rem;
+}
+
+.leader-name {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.leader-info,
+.leader-school {
+  color: var(--neutral-gray);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.leader-school {
+  font-weight: 500;
+  color: var(--primary-blue);
+}
+
+.leader-role {
+  color: var(--neutral-gray);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.leader-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--neutral-gray);
+}
+
+.stat-item i {
+  color: var(--primary-blue);
+  font-size: 1rem;
+}
+
+/* ===== SEÇÃO DE EQUIPES ===== */
+.teams-section {
+  background: var(--white);
+  position: relative;
+}
+
+.team-group {
+  margin-bottom: 4rem;
+}
+
+.team-title {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.team-title i {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+}
+
+.team-description {
+  color: var(--neutral-gray);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+/* ===== CARDS DOS ORIENTANDOS ===== */
+.student-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: var(--shadow-light);
+  transition: var(--transition-smooth);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(85, 167, 255, 0.699);
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--primary-blue);
+}
+
+.student-card .card-header {
+  background: linear-gradient(135deg, var(--light-blue), var(--primary-blue));
+  color: white;
+  padding: 1.5rem 1rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.student-avatar {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.8rem;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.student-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin: 2px;
+}
+
+.student-badge.iot {
+  background: rgba(102, 204, 255, 0.2);
+  color: #66ccff;
+  border: 1px solid rgba(102, 204, 255, 0.4);
+}
+
+.student-badge.robotics {
+  background: rgba(255, 99, 132, 0.2);
+  color: #ff6384;
+  border: 1px solid rgba(255, 99, 132, 0.4);
+}
+
+.student-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.student-card .card-body {
+  padding: 1.2rem;
+}
+
+.student-name {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.student-info,
+.student-school {
+  color: var(--neutral-gray);
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.student-school {
+  font-weight: 500;
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+}
+
+.student-role {
+  color: var(--neutral-gray);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* ===== CARD ESPECIAL PARA ORIENTANDO EM DUAS EQUIPES ===== */
+.dual-team {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, var(--primary-blue), #ff6384) border-box;
+}
+
+.dual-team:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-heavy);
+}
+
+.dual-team .card-header {
+  background: linear-gradient(135deg, var(--primary-blue), #ff6384);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .leader-avatar {
+    width: 70px;
+    height: 70px;
+    font-size: 2.2rem;
+  }
+  
+  .team-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .leader-card .card-header {
+    padding: 1.5rem 1rem 0.8rem;
+  }
+  
+  .leader-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+  
+  .student-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .team-title {
+    font-size: 1.4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .team-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .orientandos-hero {
+    padding: 2rem 0;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .leaders-section,
+  .teams-section {
+    padding: 2rem 0;
+  }
+  
+  .leader-card .card-body,
+  .student-card .card-body {
+    padding: 1rem;
+  }
+  
+  .leader-stats {
+    gap: 0.3rem;
+  }
+  
+  .stat-item {
+    font-size: 0.8rem;
+  }
+  
+  .student-badge {
+    font-size: 0.65rem;
+    padding: 3px 8px;
+  }
+}
+
+/* ===== ANIMAÇÕES ESPECIAIS ===== */
+@keyframes cardFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+.leader-card:hover {
+  animation: cardFloat 2s ease-in-out infinite;
+}
+
+/* ===== EFEITOS DE BRILHO ===== */
+.leader-card::before,
+.student-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: var(--transition-smooth);
+}
+
+.leader-card:hover::before,
+.student-card:hover::before {
+  transform: scaleX(1);
+}
+
+.dual-team::before {
+  background: linear-gradient(135deg, var(--primary-blue), #ff6384);
+}

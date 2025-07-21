@@ -1,0 +1,607 @@
+/* ===== PÁGINA SOBRE NÓS - ESTILOS ESPECÍFICOS ===== */
+
+/* ===== HERO SECTION SOBRE ===== */
+.sobre-hero {
+  background: var(--gradient-primary);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.sobre-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+}
+
+.hero-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+.scroll-indicator {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* ===== SEÇÃO DE PESQUISAS ===== */
+.research-section {
+  background: linear-gradient(135deg, var(--light-gray) 0%, rgba(102, 204, 255, 0.03) 100%);
+  position: relative;
+}
+
+.research-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 123, 255, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(102, 204, 255, 0.02) 0%, transparent 50%);
+}
+
+.research-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  border: 1px solid rgba(0, 123, 255, 0.1);
+  transition: var(--transition-smooth);
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-heavy);
+  border-color: var(--primary-blue);
+}
+
+.research-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.research-title {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tag.sustainability {
+  background: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+  border: 1px solid rgba(40, 167, 69, 0.3);
+}
+
+.tag.automation {
+  background: rgba(0, 123, 255, 0.1);
+  color: var(--primary-blue);
+  border: 1px solid rgba(0, 123, 255, 0.3);
+}
+
+.tag.iot {
+  background: rgba(102, 204, 255, 0.1);
+  color: #66ccff;
+  border: 1px solid rgba(102, 204, 255, 0.3);
+}
+
+.tag.solar {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.tag.recycling {
+  background: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+  border: 1px solid rgba(40, 167, 69, 0.3);
+}
+
+.tag.sensors {
+  background: rgba(108, 117, 125, 0.1);
+  color: #6c757d;
+  border: 1px solid rgba(108, 117, 125, 0.3);
+}
+
+.tag.arduino {
+  background: rgba(0, 150, 136, 0.1);
+  color: #009688;
+  border: 1px solid rgba(0, 150, 136, 0.3);
+}
+
+.research-description {
+  color: var(--neutral-gray);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.research-benefits,
+.research-tech,
+.research-impact {
+  margin-top: 2rem;
+}
+
+.research-benefits h5,
+.research-tech h5,
+.research-impact h5 {
+  color: var(--dark-blue);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.research-benefits ul,
+.research-tech ul {
+  list-style: none;
+  padding: 0;
+}
+
+.research-benefits li,
+.research-tech li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--neutral-gray);
+  font-size: 1rem;
+}
+
+.research-benefits li i,
+.research-tech li i {
+  color: var(--primary-blue);
+  font-size: 1.1rem;
+}
+
+.research-impact p {
+  color: var(--neutral-gray);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.research-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 400px;
+}
+
+.visual-placeholder {
+  background: linear-gradient(135deg, var(--light-blue), var(--primary-blue));
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: var(--shadow-medium);
+}
+
+.visual-placeholder i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.visual-placeholder p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ===== SEÇÃO CTRL+BOTS ===== */
+.ctrlbots-section {
+  background: var(--white);
+  position: relative;
+}
+
+.ctrlbots-section .section-title {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctrlbots-section .section-title i {
+  color: var(--primary-blue);
+  font-size: 2.2rem;
+}
+
+.ctrlbots-section .section-subtitle {
+  color: var(--neutral-gray);
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== CARDS DOS MEMBROS CTRL+BOTS ===== */
+.ctrlbots-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow-light);
+  transition: var(--transition-smooth);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.ctrlbots-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-heavy);
+  border-color: var(--primary-blue);
+}
+
+.ctrlbots-card .card-header {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 2.5rem;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.member-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.member-badge.captain {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+.member-badge.engineer {
+  background: rgba(40, 167, 69, 0.2);
+  color: #28a745;
+  border: 1px solid rgba(40, 167, 69, 0.4);
+}
+
+.member-badge.strategist {
+  background: rgba(220, 53, 69, 0.2);
+  color: #dc3545;
+  border: 1px solid rgba(220, 53, 69, 0.4);
+}
+
+.ctrlbots-card .card-body {
+  padding: 1.5rem;
+}
+
+.member-name {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.member-info,
+.member-school {
+  color: var(--neutral-gray);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.member-school {
+  font-weight: 500;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.member-role {
+  color: var(--neutral-gray);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.member-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill {
+  background: rgba(0, 123, 255, 0.1);
+  color: var(--primary-blue);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+/* ===== SEÇÃO DE CONQUISTAS ===== */
+.achievements-section {
+  background: linear-gradient(135deg, var(--light-gray) 0%, rgba(102, 204, 255, 0.03) 100%);
+  border-radius: 20px;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.achievements-section h3 {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.achievement-item {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.achievement-item i {
+  font-size: 3rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.achievement-item h5 {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-item p {
+  color: var(--neutral-gray);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .research-card {
+    padding: 2rem;
+  }
+  
+  .research-title {
+    font-size: 1.6rem;
+  }
+  
+  .ctrlbots-section .section-title {
+    font-size: 2.2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .research-card {
+    padding: 1.5rem;
+  }
+  
+  .research-title {
+    font-size: 1.4rem;
+  }
+  
+  .research-description {
+    font-size: 1rem;
+  }
+  
+  .visual-placeholder {
+    padding: 2rem;
+    min-height: 300px;
+  }
+  
+  .visual-placeholder i {
+    font-size: 3rem;
+  }
+  
+  .member-avatar {
+    width: 70px;
+    height: 70px;
+    font-size: 2.2rem;
+  }
+  
+  .ctrlbots-section .section-title {
+    font-size: 2rem;
+  }
+  
+  .achievements-section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sobre-hero {
+    padding: 2rem 0;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .research-section,
+  .ctrlbots-section {
+    padding: 2rem 0;
+  }
+  
+  .research-card {
+    padding: 1rem;
+  }
+  
+  .research-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+  
+  .research-title {
+    font-size: 1.2rem;
+  }
+  
+  .research-tags {
+    gap: 0.3rem;
+  }
+  
+  .tag {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .ctrlbots-card .card-body {
+    padding: 1rem;
+  }
+  
+  .member-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+  
+  .ctrlbots-section .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .achievements-section {
+    padding: 1.5rem;
+  }
+  
+  .achievement-item i {
+    font-size: 2.5rem;
+  }
+}
+
+/* ===== ANIMAÇÕES ESPECIAIS ===== */
+@keyframes cardFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+.ctrlbots-card:hover {
+  animation: cardFloat 2s ease-in-out infinite;
+}
+
+.research-card:hover {
+  animation: cardFloat 3s ease-in-out infinite;
+}
+
+/* ===== EFEITOS DE BRILHO ===== */
+.research-card::before,
+.ctrlbots-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: var(--transition-smooth);
+}
+
+.research-card:hover::before,
+.ctrlbots-card:hover::before {
+  transform: scaleX(1);
+}
