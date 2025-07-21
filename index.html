@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEPISE – Núcleo de Estudos e Pesquisa em IoT e Sistemas Embarcados</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- AOS (animações ao rolar) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- CSS custom -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar-custom shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <div class="logo">
+        <div class="logo-placeholder">
+          <i class="bi bi-cpu-fill"></i>
+          <span class="logo-text">NEPISE</span>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link custom-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="sobre.html">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="orientandos.html">Orientandos</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero position-relative text-center text-white d-flex align-items-center justify-content-center">
+    <div class="hero-background"></div>
+    <div class="overlay"></div>
+    <div class="content container position-relative">
+      <h1 class="hero-title display-2 fw-bold mb-3" data-aos="fade-up">NEPISE</h1>
+      <p class="hero-subtitle lead mb-4" data-aos="fade-up" data-aos-delay="200">Núcleo de Estudos e Pesquisa em IoT e Sistemas Embarcados</p>
+      <p class="hero-description mb-5" data-aos="fade-up" data-aos-delay="400">Do laboratório para a comunidade escolar: IoT e sistemas embarcados que fazem a diferença.</p>
+      <div data-aos="fade-up" data-aos-delay="600">
+        <a href="#sobre" class="btn btn-primary btn-lg me-3 custom-btn">Conheça o Núcleo</a>
+        <a href="#projetos" class="btn btn-outline-light btn-lg custom-btn-outline">Nossos Projetos</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="bi bi-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- Destaques -->
+  <section id="sobre" class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 border-0 shadow-lg highlight-card">
+          <div class="card-body text-center p-4">
+            <div class="icon-wrapper mb-3">
+              <i class="bi bi-cpu-fill icon"></i>
+            </div>
+            <h5 class="card-title fw-bold">Pesquisas em IoT</h5>
+            <p class="card-text">Projetos aplicados à educação e sociedade usando Internet das Coisas para criar soluções inovadoras e sustentáveis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 border-0 shadow-lg highlight-card">
+          <div class="card-body text-center p-4">
+            <div class="icon-wrapper mb-3">
+              <i class="bi bi-people-fill icon"></i>
+            </div>
+            <h5 class="card-title fw-bold">Orientandos de Colégios Públicos</h5>
+            <p class="card-text">Despertando talentos e construindo futuros, dentro da escola pública</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 border-0 shadow-lg highlight-card">
+          <div class="card-body text-center p-4">
+            <div class="icon-wrapper mb-3">
+              <i class="bi bi-bar-chart-fill icon"></i>
+            </div>
+            <h5 class="card-title fw-bold">Impacto Social</h5>
+            <p class="card-text">Transformamos conhecimento técnico em soluções reais para a comunidade escolar pública, gerando impacto positivo na sociedade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linhas de Pesquisa -->
+  <section class="research-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold section-title" data-aos="fade-up">Linhas de Pesquisa</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card border-0 shadow-lg h-100 research-card">
+            <div class="card-img-wrapper">
+              <div class="placeholder-img iot-education">
+                <i class="bi bi-mortarboard-fill"></i>
+                <span>Sustentabilidade e Tecnologia</span>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-primary fw-bold">IoT na Educação</h5>
+              <p class="card-text">Projetos que unem inovação tecnológica e responsabilidade ambiental, desenvolvendo soluções inteligentes para o cuidado com o meio ambiente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card border-0 shadow-lg h-100 research-card">
+            <div class="card-img-wrapper">
+              <div class="placeholder-img embedded-systems">
+                <i class="bi bi-motherboard-fill"></i>
+                <span> Tecnologia e Ciências Biológicas Aplicadas</span>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-primary fw-bold">Sistemas Embarcados</h5>
+              <p class="card-text">Desenvolvimento de sistemas embarcados e soluções tecnológicas inspiradas e aplicadas aos processos biológicos e ambientais.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card border-0 shadow-lg h-100 research-card">
+            <div class="card-img-wrapper">
+              <div class="placeholder-img automation-robotics">
+                <i class="bi bi-robot"></i>
+                <span>Automação e Robótica</span>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-primary fw-bold">Automação e Robótica</h5>
+              <p class="card-text">Projetos que unem hardware e software para automatizar tarefas e criar soluções inteligentes que melhoram a qualidade de vida.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos do NEPISE -->
+  <section id="projetos" class="container py-5">
+    <h2 class="text-center mb-5 fw-bold section-title" data-aos="fade-up">Projetos do NEPISE</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-5" data-aos="fade-up">
+        <div class="card border-0 shadow-lg text-center p-4 h-100 project-card">
+          <div class="project-img-wrapper mb-4">
+            <div class="project-img-placeholder scientific-research">
+               <img src="img/iniciação.png" alt="Iniciação Científica" class="project-img rounded-circle mx-auto">
+            </div>
+          </div>
+          <h5 class="card-title text-primary fw-bold">Iniciação Científica</h5>
+          <p class="card-text">Pesquisas aplicadas ao ensino médio, desenvolvendo soluções em IoT e sistemas embarcados com foco na formação de novos pesquisadores.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="card border-0 shadow-lg text-center p-4 h-100 project-card">
+          <div class="project-img-wrapper mb-4">
+            <div class="project-img-placeholder robotics-team">
+              <img src="img/ctrlbots.png" alt="CTRL+BOTS" class="project-img rounded-circle mx-auto">
+            </div>
+          </div>
+          <h5 class="card-title text-primary fw-bold">CTRL+BOTS</h5>
+          <p class="card-text">Equipe de competição de robótica do núcleo, que participa de torneios de seguidores de linha, sumô e projetos autorais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A Fundadora -->
+  <section class="founder-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold section-title" data-aos="fade-up">A Fundadora</h2>
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-center mb-4 mb-lg-0" data-aos="fade-right">
+          <div class="founder-img-wrapper">
+            <div class="founder-img-placeholder">
+              <img src="img/coordenadora.png" alt="Profª Anna Flávia" class="project-img rounded-circle mx-auto">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8" data-aos="fade-left">
+          <div class="founder-content">
+            <h3 class="founder-name mb-3">Coordenadora - Profª Anna Flávia Fogaça</h3>
+            <p class="founder-description mb-4">
+              Como fundadora e coordenadora do NEPISE, acredito que a pesquisa é uma ponte poderosa entre educação e inovação. Minha paixão por IoT e sistemas embarcados nasceu do desejo de mostrar, especialmente às meninas, que a tecnologia também é nosso lugar. Liderar esse núcleo é, para mim, formar uma nova geração de jovens pesquisadores capazes de transformar conhecimento em soluções concretas que impactem positivamente a sociedade.
+            </p>
+            <p class="founder-description mb-4">
+              Com experiência em pesquisa acadêmica e desenvolvimento tecnológico, busco constantemente conectar teoria e prática, 
+              orientando estudantes e colaborando em projetos que transformem conhecimento em soluções reais para desafios contemporâneos.
+            </p>
+            <div class="founder-achievements">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <div class="achievement-item text-center">
+                    <div class="achievement-icon">
+                      <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                    <h6 class="achievement-title">Formação Acadêmica</h6>
+                    <p class="achievement-desc">Bacharel em Engenharia de Computação</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="achievement-item text-center">
+                    <div class="achievement-icon">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h6 class="achievement-title">Orientação</h6>
+                    <p class="achievement-desc">10+ Estudantes Orientados</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="achievement-item text-center">
+                    <div class="achievement-icon">
+                      <i class="bi bi-award-fill"></i>
+                    </div>
+                    <h6 class="achievement-title">Projetos</h6>
+                    <p class="achievement-desc">Atualmente 3 Projetos Coordenados</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parcerias -->
+  <section class="partnerships-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold section-title" data-aos="fade-up">Nossas Parcerias</h2>
+      <p class="text-center mb-5 section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Colaboramos com instituições de ensino e empresas líderes em tecnologia para fortalecer a pesquisa e inovação
+      </p>
+      
+      <!-- Universidades -->
+      <div class="partnership-category mb-5" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="category-title text-center mb-4">Instituições de Ensino</h4>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="partner-logo-wrapper" data-bs-toggle="tooltip" data-bs-placement="top" title="UNIFATEC-PR">
+              <div class="partner-logo university-1">
+                <i class="bi bi-mortarboard-fill"></i>
+                <span class="partner-name">UNIFATEC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+      
+      <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+        <p class="partnership-cta">
+          Interessado em estabelecer uma parceria com o NEPISE?
+        </p>
+        <a href="#contato" class="btn btn-primary btn-lg custom-btn">
+          <i class="bi bi-handshake me-2"></i>
+          Entre em Contato
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contato" class="footer-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="text-white fw-bold mb-3">NEPISE</h5>
+          <p class="text-light">Núcleo de Estudos e Pesquisa em IoT e Sistemas Embarcados</p>
+          <p class="text-light">Transformando conhecimento em inovação tecnológica</p>
+        </div>
+        <div class="col-md-6">
+          <h5 class="text-white fw-bold mb-3">Contato</h5>
+          <p class="text-light"><i class="bi bi-envelope me-2"></i>contato@nepise.com.br</p>
+          <p class="text-light"><i class="bi bi-geo-alt me-2"></i>Curitiba, Paraná</p>
+          <div class="social-links mt-3">
+            <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 border-light">
+      <div class="text-center">
+        <p class="text-light mb-0">&copy; 2025 - NEPISE. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Initialize Bootstrap tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Scroll indicator animation
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+      setInterval(() => {
+        scrollIndicator.style.transform = 'translateY(10px)';
+        setTimeout(() => {
+          scrollIndicator.style.transform = 'translateY(0)';
+        }, 500);
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
+

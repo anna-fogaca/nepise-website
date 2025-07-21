@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orientandos - NEPISE</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/orientandos.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar-custom shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <div class="logo">
+        <div class="logo-placeholder">
+          <i class="bi bi-cpu-fill"></i>
+          <span class="logo-text">NEPISE</span>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link custom-link" href="index.html#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="pesquisas.html">Pesquisas</a></li>
+          <li class="nav-item"><a class="nav-link custom-link active" href="orientandos.html">Orientandos</a></li>
+          <li class="nav-item"><a class="nav-link custom-link" href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="orientandos-hero py-5">
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-12 text-center">
+          <h1 class="hero-title mb-4" data-aos="fade-up">
+            Nossos Orientandos
+          </h1>
+          <p class="hero-subtitle mb-5" data-aos="fade-up" data-aos-delay="200">
+            Conheça os jovens pesquisadores que fazem parte do NEPISE, desenvolvendo projetos inovadores em IoT e Sistemas Embarcados.
+          </p>
+          <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Líderes Section -->
+  <section class="leaders-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold section-title" data-aos="fade-up">Liderança das Equipes</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-5 col-md-6" data-aos="fade-up">
+          <div class="leader-card h-100">
+            <div class="card-header">
+              <div class="leader-avatar">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="leader-badge leader">Líder - Equipe 1</div>
+            </div>
+            <div class="card-body">
+              <h5 class="leader-name">Victor Gabriel Pinheiro</h5>
+              <p class="leader-info">3º ano do Ensino Médio</p>
+              <p class="leader-school">Colégio Estadual Avelino Antônio Vieira</p>
+              <p class="leader-role">Coordenação da pesquisa da Composteira Inteligente</p>
+              <div class="leader-stats">
+                <div class="stat-item">
+                  <i class="bi bi-trophy-fill"></i>
+                  <span>1 Projeto Liderado</span>
+                </div>
+                <div class="stat-item">
+                  <i class="bi bi-people-fill"></i>
+                  <span>5 Orientandos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="leader-card h-100">
+            <div class="card-header">
+              <div class="leader-avatar">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="leader-badge co-leader">Líder - Equipe 2</div>
+            </div>
+            <div class="card-body">
+              <h5 class="leader-name">Yuri Pietro Ciconini</h5>
+              <p class="leader-info">3º ano do Ensino Médio</p>
+              <p class="leader-school">Colégio Estadual Avelino Antônio Vieira</p>
+              <p class="leader-role">Coordenação da pesquisa da Lixeira Inteligente</p>
+              <div class="leader-stats">
+                <div class="stat-item">
+                  <i class="bi bi-gear-fill"></i>
+                  <span>1 Projeto Liderado</span>
+                </div>
+                <div class="stat-item">
+                  <i class="bi bi-people-fill"></i>
+                  <span>3 Orientandos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipes de Pesquisa -->
+  <section class="teams-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold section-title" data-aos="fade-up">Equipes de Pesquisa</h2>
+      
+      <!-- Equipe 1: Composteira Inteligente -->
+      <div class="team-group mb-5" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="team-title">
+          <i class="bi bi-tree-fill"></i>
+            Equipe 1: Composteira Inteligente
+        </h3>
+        <p class="team-description">
+          Equipe focada no desenvolvimento de uma Composteira Inteligente, utilizando tecnologias IoT para monitoramento e otimização do processo de compostagem em colégios públicos.
+        </p>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="student-card h-100">
+              <div class="card-header">
+                <div class="student-avatar">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="student-badge iot">Documentação</div>
+              </div>
+              <div class="card-body">
+                <h6 class="student-name">Ana Julia Dos Santos Teixeira</h6>
+                <p class="student-info">3º ano do Ensino Médio</p>
+                <p class="student-school">Colégio Estadual Avelino Antônio Vieira</p>
+                <p class="student-role">Escrita científica e documentação do projeto</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="student-card h-100">
+              <div class="card-header">
+                <div class="student-avatar">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="student-badge iot">Programação Mobile</div>
+              </div>
+              <div class="card-body">
+                <h6 class="student-name">Asafe Alves Martins</h6>
+                <p class="student-info">3º ano do Ensino Médio</p>
+                <p class="student-school">Colégio Estadual Avelino Antônio Vieira</p>
+                <p class="student-role">Desenvolvimento de aplicações mobile utilizando Python (Kivy)</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="student-card h-100">
+              <div class="card-header">
+                <div class="student-avatar">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="student-badge iot">Programação</div>
+              </div>
+              <div class="card-body">
+                <h6 class="student-name">Gabriel Peters Rosa</h6>
+                <p class="student-info">3º ano do Ensino Médio</p>
+                <p class="student-school">Colégio Estadual Professor Alcyone Moraes de Castro Vellozo</p>
+                <p class="student-role">Programação em C++ e desenvolvimento mobile com Python (Kivy)</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="student-card h-100">
+              <div class="card-header">
+                <div class="student-avatar">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="student-badge iot">Eletrônica</div>
+              </div>
+              <div class="card-body">
+                <h6 class="student-name">Sara Gabrielle De Oliveira</h6>
+                <p class="student-info">3º ano do Ensino Médio</p>
+                <p class="student-school">Colégio Estadual Avelino Antônio Vieira</p>
+                <p class="student-role">Desenvolvimento e criação do protótipo embarcado da composteira</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="student-card h-100 dual-team">
+              <div class="card-header">
+                <div class="student-avatar">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="student-badges">
+                  <div class="student-badge iot">Eletrônica</div>
+                  <div class="student-badge robotics">Gestão de Projetos</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="student-name">Victor Gabriel S. Pinheiro</h6>
+                <p class="student-info">3º ano do Ensino Médio</p>
+                <p class="student-school">Colégio Estadual Avelino Antônio Vieira</p>
+                <p class="student-role">Gestão da equipe, liderança e auxílio no desenvolvimento do protótipo embarcado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Equipe 2: Lixeira Inteligente -->
+      <div class="team-group" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="team-title">
+          <i class="bi bi-trash-fill"></i>
+          Equipe 2: Lixeira Inteligente
+        </h3>
+        <p class="team-description">
+          Equipe dedicada ao desenvolvimento de uma Lixeira Inteligente que separa automaticamente resíduos orgânicos e inorgânicos, promovendo a sustentabilidade e a gestão eficiente de resíduos.
+        </p>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="student-card h-100 dual-team">
+              <div class="card-header">
+                <div class="student-avatar">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="student-badges">
+                  <div class="student-badge iot">Escrita Científica</div>
+                  <div class="student-badge robotics">Arduino</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="student-name">Gabriel Peters Rosa</h6>
+                <p class="student-info">3º ano do Ensino Médio</p>
+                <p class="student-school">Colégio Estadual Professor Alcyone Moraes de Castro Vellozo</p>
+                <p class="student-role">Escrita científica e desenvolvimento do código em C++ para Arduino</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="student-card h-100">
+              <div class="card-header">
+                <div class="student-avatar">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="student-badge robotics">Programação</div>
+              </div>
+              <div class="card-body">
+                <h6 class="student-name">João Victor Ramalho</h6>
+                <p class="student-info">3º ano do Ensino Médio</p>
+                <p class="student-school">Colégio Estadual Avelino Antônio Vieira</p>
+                <p class="student-role">Programação de algoritmos para sensores e atuadores da lixeira</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="student-card h-100">
+              <div class="card-header">
+                <div class="student-avatar">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="student-badges">
+                  <div class="student-badge iot">Eletrônica</div>
+                  <div class="student-badge robotics">Gestão de Projetos</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="student-name">Yuri Pietro Ciconini</h6>
+                <p class="student-info">3º ano do Ensino Médio</p>
+                <p class="student-school">Colégio Estadual Avelino Antônio Vieira</p>
+                <p class="student-role">Gestão da equipe, liderança e desenvolvimento do protótipo embarcado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contato" class="footer-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <h5 class="footer-title mb-4">NEPISE</h5>
+          <p class="footer-description">Núcleo de Estudos e Pesquisa em IoT e Sistemas Embarcados</p>
+          <p class="footer-tagline">Transformando conhecimento em inovação tecnológica</p>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <h5 class="footer-title mb-4">Contato</h5>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <span>contato@nepise.com.br</span>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Curitiba, Paraná</span>
+            </div>
+          </div>
+          <div class="social-links mt-3">
+            <a href="#" class="social-link">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Scroll indicator animation
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+      setInterval(() => {
+        scrollIndicator.style.transform = 'translateY(10px)';
+        setTimeout(() => {
+          scrollIndicator.style.transform = 'translateY(0)';
+        }, 500);
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
